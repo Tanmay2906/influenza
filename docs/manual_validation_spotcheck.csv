@@ -1,0 +1,5 @@
+sample_id,position,ref,alt,gene,pipeline_codon,independent_codon,pipeline_protein,independent_protein,match
+AB745144.1,106,G,A,HA,GTA>ATA,GTA>ATA,V36I,V36I,True
+AB745233.1,106,G,A,HA,GTA>ATA,GTA>ATA,V36I,V36I,True
+AB745249.1,298,C,T,HA,CCT>TCT,CCT>TCT,P100S,P100S,True
+AB745144.1,891,A,G,HA,CAA>CAG,CAA>CAG,Q297=,Q297=,True

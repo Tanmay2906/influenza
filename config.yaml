@@ -1,0 +1,33 @@
+# Central study configuration; every stage reads this file.
+study:
+  virus: Influenza A virus
+  subtype: H1N1
+  segment: 4
+  gene_product: hemagglutinin
+  year_start: 2009
+  year_end: 2019
+  per_year_target: 8        # sequences sampled per collection year
+  seed: 42
+reference:
+  accession: NC_026433.1    # A/California/07/2009 (H1N1) segment 4 (HA), RefSeq
+ncbi:
+  email: vmt-research@example.com
+  candidates_per_year: 400  # candidate pool size per publication year
+qc:
+  min_length: 1650          # reference HA CDS record is 1701 bp
+  max_length: 1800
+  max_ambiguous_fraction: 0.01
+  max_gap_fraction: 0.0
+alignment:
+  mode: global
+  match: 2
+  mismatch: -3
+  open_gap: -8
+  extend_gap: -1
+  min_identity: 0.90        # below this, a sample is a different lineage (e.g. seasonal vs pdm09) and is excluded
+paths:
+  raw: data/raw
+  reference: data/reference
+  processed: data/processed
+  tables: results/tables
+  figures: results/figures

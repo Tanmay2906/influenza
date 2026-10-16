@@ -1,0 +1,18 @@
+{
+  "retrieval_date": "2026-10-11",
+  "database": "NCBI nuccore (GenBank)",
+  "reference": "NC_026433.1",
+  "n_candidates": 5199,
+  "n_eligible": 3199,
+  "n_selected": 88,
+  "config_study": {
+    "virus": "Influenza A virus",
+    "subtype": "H1N1",
+    "segment": 4,
+    "gene_product": "hemagglutinin",
+    "year_start": 2009,
+    "year_end": 2019,
+    "per_year_target": 8,
+    "seed": 42
+  }
+}
